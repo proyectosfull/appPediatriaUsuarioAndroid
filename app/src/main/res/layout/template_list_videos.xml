@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:paddingTop="@dimen/input_space"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/input_space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_thumbnail_video"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/youtube"/>
+
+        <TextView
+            android:id="@+id/txv_title_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdsdasdddsfd sdfds fsdf sd fsdf sdf dsfsdfsf" />
+    </LinearLayout>
+
+</LinearLayout>

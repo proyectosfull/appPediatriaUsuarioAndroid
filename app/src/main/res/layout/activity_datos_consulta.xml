@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    tools:context=".DatosConsultaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obteniendo datos"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/progress_loading" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/txv_lbl_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Paciente"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/txv_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="-"/>
+        <TextView
+            android:id="@+id/txv_lbl_temperatura_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Peso y Temperatura"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txv_temperatura_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="-"/>
+        <TextView
+            android:id="@+id/txv_lbl_sintomas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sintomas"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txv_sintomas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txv_lbl_fecha_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fecha de registro"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txv_fecha_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="-" />
+
+        <LinearLayout
+            android:id="@+id/layout_container_atencion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txv_lbl_pediatra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pediatra"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/txv_pediatra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="-"/>
+            <TextView
+                android:id="@+id/txv_lbl_nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Comentario de pediatra"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/txv_nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="-"/>
+            <TextView
+                android:id="@+id/txv_lbl_fecha_atendido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Fecha de consulta atendida"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/txv_fecha_atendido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="-"/>
+
+            <Button
+                android:id="@+id/btn_receta"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="RECETA" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.AcercaDeFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TableLayout
+        android:layout_width="328dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="167dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/acerca" />
+
+            <Space
+                android:layout_width="13dp"
+                android:layout_height="match_parent" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:text="@string/about_text1"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_height="25dp"
+                android:layout_span="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="222dp">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView4"
+                android:layout_width="142dp"
+                android:layout_height="match_parent"
+                android:text="@string/about_text2"
+
+                android:textSize="11sp" />
+
+            <Space
+                android:layout_width="13dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="144dp"
+                android:layout_height="187dp"
+                android:layout_gravity="center"
+                android:src="@drawable/acerca2" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

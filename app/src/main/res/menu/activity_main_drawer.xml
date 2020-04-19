@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_item_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/nav_item_profile" />
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_add_user"
+            android:title="@string/nav_item_register" />
+        <item
+            android:id="@+id/nav_doctors"
+            android:icon="@drawable/ic_doctor"
+            android:title="@string/nav_item_doctors" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history"
+            android:title="@string/nav_item_history" />
+        <item
+            android:id="@+id/nav_crecimiento"
+            android:icon="@drawable/ic_crecimiento"
+            android:title="@string/nav_item_crecimiento" />
+        <item
+            android:id="@+id/nav_desarrollo"
+            android:icon="@drawable/ic_desarrollo"
+            android:title="@string/nav_item_desarrollo" />
+        <item
+            android:id="@+id/nav_cartilla"
+            android:icon="@drawable/ic_vacuna"
+            android:title="@string/nav_item_cartilla_vacunacion" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_video"
+            android:title="@string/nav_item_videos" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_call_center"
+                android:icon="@drawable/ic_phone"
+                android:title="@string/nav_item_call_center" />
+            <item
+                android:id="@+id/Acerda_de"
+                android:icon="@drawable/ic_info"
+                android:title="@string/nav_item_about" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/nav_item_logout" />
+        </menu>
+    </item>
+
+</menu>

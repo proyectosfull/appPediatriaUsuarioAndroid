@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/datos_vacuna"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    tools:context=".VacunaActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txl_fecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txt_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha Aplicación"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/hint_vacuna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        android:text="Vacuna"
+        style="@style/InputLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txl_fecha"/>
+
+    <Spinner
+        android:id="@+id/sp_vacuna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_vacuna" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txl_otro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_vacuna"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/txt_otro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especificar vacuna"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/hint_tipo_aplicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        android:text="Aplicación"
+        style="@style/InputLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txl_otro"/>
+    <Spinner
+        android:id="@+id/sp_aplicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_tipo_aplicacion" />
+
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        app:layout_constraintTop_toBottomOf="@+id/sp_aplicacion"
+        style="@style/PrimaryButton"
+        android:text="Agregar" />
+
+    <!--<ImageView
+        android:id="@+id/imv_cartilla_vacunacion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_actualizar_cartilla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_actualizar_cartilla"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar cartilla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

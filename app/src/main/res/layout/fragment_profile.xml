@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <TextView
+        android:id="@+id/txv_cambiar_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cambiar contraseña"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txl_pass_actual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        android:layout_marginStart="@dimen/input_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_cambiar_pass"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/txt_pass_actual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña actual"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txl_pass_nueva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        android:layout_marginStart="@dimen/input_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txl_pass_actual"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/txt_pass_nueva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña Nueva"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_cambiar_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Accent"
+        android:text="Cambiar contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/txl_pass_nueva"/>
+<!--
+    <TextView
+        android:id="@+id/txv_editar_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        android:text="Editar Datos"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cambiar_pass"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txl_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        android:layout_marginStart="@dimen/input_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_editar_datos">
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:imeOptions="actionNext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txl_apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        android:layout_marginStart="@dimen/input_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txl_nombre">
+
+        <EditText
+            android:id="@+id/txt_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            android:imeOptions="actionNext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        android:layout_marginStart="@dimen/input_space"
+        android:text="Subir fotografía"
+        style="@style/AccentButton"
+        app:layout_constraintTop_toBottomOf="@+id/txl_apellidos"
+        android:drawableStart="@drawable/ic_insert_photo" />
+
+    <Button
+        android:id="@+id/btn_editar_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_space"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Accent"
+        android:text="Guardar Datos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_photo"/>
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/periodo_gestacion"
+        android:layout_width="wrap_content"
+        android:icon="@drawable/ic_pregnant"
+        android:title="Gestación" />
+    <item
+        android:id="@+id/parto_cesaria"
+        android:layout_width="wrap_content"
+        android:icon="@drawable/ic_birth_baby"
+        android:title="Parto/Cesaria" />
+    <item
+        android:id="@+id/recien_nacido"
+        android:layout_width="wrap_content"
+        android:icon="@drawable/ic_crawling_baby"
+        android:title="Recién Nacido" />
+
+    <!--<item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notice"
+        android:title="@string/title_notifications" />-->
+
+</menu>

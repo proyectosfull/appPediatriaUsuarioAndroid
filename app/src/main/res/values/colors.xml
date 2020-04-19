@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#355ec6</color>
+    <color name="colorPrimaryDark">#274591</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--Chart Colors-->
+    <!--<color name="chart_normal_boys">#689f38</color>
+    <color name="chart_normal_girls">#f06292</color>
+    <color name="chart_alert">#fdd835</color>
+    <color name="chart_risk">#fb8c00</color>
+    <color name="chart_overweight">#e53935</color>-->
+    <color name="chart_normal_boys">#a9e5e3</color>
+    <color name="chart_normal_girls">#e6bddd</color>
+    <color name="chart_alert">#fbe087</color>
+    <color name="chart_risk">#e8ba86</color>
+    <color name="chart_overweight">#ffa8b9</color>
+
+    <!-- Tree View Icon colors -->
+    <color name="youtube">#ff0000</color>
+</resources>

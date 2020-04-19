@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        tools:context=".fragments.RegisterFragment">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/ic_child"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/txt_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_apellidos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/input_space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/txl_nombre">
+
+            <EditText
+                android:id="@+id/txt_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellidos"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_fecha_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+            <EditText
+                android:id="@+id/txt_fec_nacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de nacimiento"
+                android:inputType="date"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+
+            android:id="@+id/radio_parentesco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_space"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/txl_fecha_nacimiento"
+            tools:layout_editor_absoluteX="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relación: "
+                android:layout_weight="1"
+                />
+            <RadioButton
+                android:id="@+id/radio_madre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+
+                android:text="Madre" />
+
+            <RadioButton
+                android:id="@+id/radio_padre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Padre" />
+
+            <RadioButton
+
+                android:id="@+id/radio_tutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tutor" />
+        </RadioGroup>
+
+
+        <!--<Button
+            android:id="@+id/btn_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_space"
+            android:text="Agregar fotografía"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            app:layout_constraintTop_toBottomOf="@+id/radio_parentesco" />-->
+
+        <RadioGroup
+            android:id="@+id/radio_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_space"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/radio_parentesco">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo: "
+                android:layout_weight="1"
+                />
+            <RadioButton
+                android:id="@+id/radio_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Niño"/>
+
+            <RadioButton
+                android:id="@+id/radio_femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Niña"/>
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txl_notas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_sexo">
+            <EditText
+                android:id="@+id/txt_notas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:hint="Notas"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_space"
+            app:layout_constraintTop_toBottomOf="@+id/txl_notas"
+            style="@style/PrimaryButton"
+            android:text="Registrar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

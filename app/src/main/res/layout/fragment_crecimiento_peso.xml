@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CrecimientoFragment$CrecimientoPesoFragment">
+    <TableLayout
+        android:id="@+id/label_data"
+        android:translationZ="90dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:background="#ddffffff"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp">
+        <TableRow android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/chart_overweight"/>
+            <TextView
+                android:layout_width="57dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:text="Sobrepeso"/>
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/chart_risk"/>
+            <TextView
+                android:layout_width="57dp"
+                android:layout_marginStart="5dp"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Riesgo de sobrepeso"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="8dp" android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/label_item_normal"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/chart_normal_boys"/>
+            <TextView
+                android:layout_width="57dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:text="Normal"/>
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/chart_alert"/>
+            <TextView
+                android:layout_width="57dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:text="Alerta"/>
+        </TableRow>
+    </TableLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+    </com.github.mikephil.charting.charts.LineChart>
+
+</FrameLayout>
