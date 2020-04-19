@@ -1,5 +1,5 @@
 *.iml
-*.abb
+*.aab
 .gradle
 /local.properties
 /.idea/caches
